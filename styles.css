@@ -1,0 +1,28 @@
+.body{
+    margin-left: 50;
+    margin-right: 50;
+}
+
+.header-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.about-me{
+    background-color: #2874A6 ;
+    margin-top: 60px;
+    padding: 4rem;
+    /* padding: 20px; */
+}
+
+.projects{
+    background-color: #2E86C1;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+}
