@@ -10,6 +10,83 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 
+document.getElementById("resume-button").addEventListener("click", function() {
+    // URL of your resume
+    var resumeUrl = "assets/Jahnavi_Panchavati_Resume.pdf";
+    // Open the resume in a new tab
+    window.open(resumeUrl, "_blank");
+});
+
+window.addEventListener('scroll', function() {
+    const header = document.getElementById('header');
+    if (window.scrollY > 50) {
+        header.classList.remove('transparent');
+        header.classList.add('solid');
+    } else {
+        header.classList.remove('solid');
+        header.classList.add('transparent');
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function(){
+    const jobList = document.getElementById('job-list');
+    const jobDetails = document.getElementById('job-details');
+
+    const title1 = "Full Stack Engineering Analyst"
+    const company1 = "Accenture "
+    const location1 = "Bengaluru, India"
+    let details1 = [
+        "Developed and executed the password reset functionality using Angular and ASP.NET core web API. Ensured security and compliance by following best practices for password handling and encryption.",
+        `Developed interactive dashboards with Angular and D3.js frameworks, integrating dynamic charts to display key metrics. Improved user engagement by 25% through effective visualizations. 
+        Enhanced application responsiveness, reducing loading times by 40% for a better user experience.`,
+        "Developed and optimized APIs utilizing the ASP.NET Core framework, leading to a 50% increase in overall application performance and a 20% decrease in server response times.",
+        "Enhanced user experience by redesigning and expanding the application's UI, introducing new intuitive pages to streamline navigation and usability."
+    ]
+
+    const title2 = "Data Science Intern"
+    const company2 = "Pivotchain Technologies "
+    const location2 = "Remote, India"
+    let details2 = [
+        "Designed and implemented an end-to-end application utilizing a CNN model to accurately determine vehicle colors from input images. Achieved an accuracy of 91.87% and successfully deployed the system on the cloud.",
+        "Contributed to the generation of training datasets for deep learning models by meticulously annotating image datasets, resulting in a substantial boost in model performance."
+    ]
+
+    const items = [
+        {title: title1, company:company1, location: location1, description: details1},
+        {title: title2, company:company2, location: location2, description: details2}
+    ]
+
+    jobList.addEventListener('click', function(event){
+        const selectedJobIndex = event.target.getAttribute('data-index');
+
+        if(selectedJobIndex !== null){
+            const selectedJob = items[selectedJobIndex]
+            renderSelectedJobDetails(selectedJob)
+        }
+    })
+
+    function renderSelectedJobDetails(item){
+        jobDetails.innerHTML=`
+            <h5>${item.title}</h5>
+            <h6>${item.company}, ${item.location}</h6>
+        `
+        let sentencesContainer = document.getElementById('job-description');
+        sentencesContainer.innerHTML = "";
+        for(let i = 0; i < item.description.length; i++){
+            let paragraph = document.createElement('p');
+            paragraph.textContent = item.description[i];
+            sentencesContainer.appendChild(paragraph);
+        }
+
+    }
+
+    renderSelectedJobDetails(items[0]);
+
+
+})
+
+
+
 // Function to handle sliding of cards
 // function scrollCards(direction) {
 //     const container = document.getElementById('cardContainer');
