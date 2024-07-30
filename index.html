@@ -13,76 +13,66 @@
         <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
           
     </head>
-    <body>
-        <section id="header" class="header-bar">
-            <div class="row">
-                <ul id = "navItems" class="nav nav-pills justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#aboutme">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                      </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li> -->
-                    <!-- <li class="nav-item">
-                        <a href="assets/Jahnavi_Panchavati_Resume.pdf" target="_blank" class="nav-link">Resume</a>
-                    </li> -->
-                    <li class="nav-item">
-                      <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        
-            <section id="home" class="d-flex justify-content-center align-items-center text=center">
-                <div>
-                    <h2>Hello!</h2>
-                    <h1 style="font-size: 55px;">I'm Jahnavi</h1>
-                    <h2>Software Developer</h2>
-                    <p style="font-size: 20px;">Master of Computer Science, North Carolina State University</p>
+    <body style="background-color: antiquewhite; display: flex; flex-direction: column; flex-grow: 1;">
+        <header>
+            <div class="header-bar">
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    &#9776; <!-- This is the hamburger icon -->
+                  </button>
+                <nav class="nav-dropdown">
+                  <ul class="nav-links" style="margin-bottom: 0; padding-left: 0;">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </nav>
+             </div>
+          
+            <!-- <div class="header-bar">
+                <nav>
+                    <ul class="nav-links" >
+                        
+                      </ul>
+                </nav>
+            </div> -->
+        </header>
+        <div style="display: flex; flex-direction: column; flex-grow: 1; height: 100%; margin-top: var(--e);">
+            <main>
+                <div id="home" class="container-fluid home-container">
+                    <div class="home-child">
+                        <h2>Hello!</h2>
+                        <h1 style="font-size: 55px;">I'm Jahnavi</h1>
+                        <h2>Software Developer</h2>
+                        <p style="font-size: 20px;">Master of Computer Science, North Carolina State University</p>
+                        <div style="text-align: center;">
+                            <button id="resume-button" style="border-radius: 10px; background-color: #023e8a; color: aliceblue;">Resume</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div id="about-me" class="container about-me">
                     <div style="text-align: center;">
-                        <button id="resume-button">Resume</button>
+                        <h2>About Me</h2>
                     </div>
-                </div>
-            </section>
-
-            <section id="aboutme" class="about-me">
-                <div style="text-align: center;">
-                    <h2>About Me</h2>
-                </div>
-                <div class="row">
-                    <!-- <div class="col-md-4"> -->
-                        <!-- <div class="card">
-                            <div class="card-body"></div>
-                        </div> -->
-                    <!-- </div> -->
-                    <div>
-                        <p>
-                            Hello World! Welcome to my webpage. I am Jahnavi and I am currently pursuing my masters in computer science
-                            at North Carolina State University, United States. Technology always fascinated me and getting to know the working of the awesome technology we use everyday
-                            has been my goal.  I completed my Bachelor of Technology in Electronics and
-                            Communication from PES University, Bangalore, India. My interests lie in the area of software, data and cloud. My interets and curiosity in learning the how part of the amazing technology benefits
-                            we experience today has made me choose the field of computer science. Go ahead and look at the projects I worked on! I am actively looking 
-                            for full time opportunities starting May 2025. 
-                            <!-- Please reach out to me for any opportunities or collaborations. -->
-                        </p>
-
-                    </div>
-                </div>
-
-                    <div class="container-fluid">
-                        <div class="row">
-                            <!-- <h2 style="text-align: center;">Skills</h2> -->
+                    <div class="row">
+                        <div style="text-align: center;">
+                            <p>
+                                Hello World! Welcome to my webpage. I am Jahnavi and I am currently pursuing my masters in computer science
+                                at North Carolina State University, United States. Technology always fascinated me and getting to know the working of the awesome technology we use everyday
+                                has been my goal.  I completed my Bachelor of Technology in Electronics and
+                                Communication from PES University, Bangalore, India. My interests lie in the area of software, data and cloud. My interets and curiosity in learning the how part of the amazing technology benefits
+                                we experience today has made me choose the field of computer science. Go ahead and look at the projects I worked on! I am actively looking 
+                                for full time opportunities starting May 2025. 
+                                <!-- Please reach out to me for any opportunities or collaborations. -->
+                            </p>
     
-                            <div class="col-md-12">
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">    
+                            <div class="col-md-6">
                                 <div class="card">
                                     <div class="card-header"> 
                                         <h3>Programming Languages and Frameworks</h3>
@@ -97,14 +87,17 @@
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/r/r-original.svg" height="80px" width="80px" style="padding-right: 10px;"/>
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" height="80px" width="80px" style="padding-right: 10px;"/>
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original-wordmark.svg" height="80px" width="80px" style="padding-right: 10px;"/>
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" height="80px" width="80px" style="padding-right: 10px;"/>
+                                        <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" height="80px" width="80px" style="padding-right: 10px;"/> -->
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" height="80px" width="80px" style="padding-right: 10px;"/>
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain-wordmark.svg" height="80px" width="80px" style="padding-right: 10px;"/>
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" height="80px" width="80px" style="padding-right: 10px;"/>
-              
-               
+                                        <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain-wordmark.svg" height="80px" width="80px" style="padding-right: 10px;"/> -->
+                                        <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" height="80px" width="80px" style="padding-right: 10px;"/> -->
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" height="80px" width="80px" style="padding-right: 10px;"/>
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original-wordmark.svg" height="80px" width="80px" style="padding-right: 10px;"/>
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-plain-wordmark.svg" height="80px" width="80px" style="padding-right: 10px;"/>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="col-md-6">
                                 <div class="card">
                                     <div class="card-header">
                                         <h3>Databases and Technologies</h3>
@@ -117,265 +110,133 @@
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original-wordmark.svg" height="80px" width="80px" style="padding-right: 10px;"/>
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original-wordmark.svg" height="80px" width="80px" style="padding-right: 10px;"/>
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" height="80px" width="80px" style="padding-right: 10px;"/>
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" height="80px" width="80px" style="padding-right: 10px;"/>
                                     </div>
                                 </div>
-                                <!-- <div class="card">
-                                    <div class="card-header">
-                                        <h3>Databases</h3>
-                                    </div>
-                                    <div class="card-body">
-                                        
-              
-                                    </div>
-                                </div> -->
-    
                             </div>
                         </div>
-                    </div>
-
-    
-                <!-- <div class="row">
-                    <div class="col-md-6">
-                        <h3>Education</h3>
-                        <div class="card">
-                            <h4 class="card-title">Master of Computer Science</h4>
-                            <h5>North Carolina State University, Raleigh, NC</h5>
-                        </div>
-
-                        <div class="card">
-                            <h4 class="card-title">Master of Computer Science</h4>
-                            <h5>PES University, Bengaluru, India</h5>
-                        </div>
-                        
-                    </div>
-                </div> -->
-            </section> 
-
-            <section id="experience" class="experience" style="height: 50%;">
-                <div style="text-align: center;">
-                    <h2>Work Experience</h2>
-                </div>
-                <div class="row" style="padding-top: 20px;">
-                    <div class="col-md-3">
-                        <ul id="job-list">
-                            <li data-index="0">Full Stack Engineering Analyst</li>
-                            <li data-index="1">Data Science Intern</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-9">
-                        <div id="job-details">
-                            
-                        </div>
-                        <div id="job-description" style="max-height: 300px;overflow-y: scroll;">
-
-                        </div>
-                        
                     </div>
                 </div>
-            </section>
-    
-            <section id="projects" class="projects">
-         
-                <h2 style="text-align: center;">Projects</h2>
-                <div class="row" style="margin-top: 30px;">
-                    <div class="col-md-3">
-                        <div class="project-card">
-                            <img class="project-card-image" src="images/Designer.jpeg"></img>
-                            <div class="project-card-content">
-                                <div class="project-card-title">
-                                    <h4>Caption Generation For Images</h4>
-                                </div>
-                                <div class="project-card-info">
-                                    <p>This is the additional information that appears below the title. Both the title and this information will slide up together when you hover over the card.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
+                <div id="experience" class="container experience" >
+                    <div style="text-align: center;margin-bottom: 1.5rem;">
+                        <h2>Work Experience</h2>
                     </div>
-                    <div class="col-md-3">
-                        <div class="project-card">
-                            <img class="project-card-image" src="images/rag_app.png"></img>
-                            <div class="project-card-content">
-                                <div class="project-card-title">
-                                    <h4>Document Summarizer and Q&A App</h4>
-                                </div>
-                                <div class="project-card-info">
-                                    <p>This is the additional information that appears below the title. Both the title and this information will slide up together when you hover over the card.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
+                    <div class="row" style="padding-top: 20px;">
+                        <div class="col-md-3" style="padding-top: 1.5rem;">
+                            <ul id="job-list">
+                                <li data-index="0">Full Stack Engineering Analyst</li>
+                                <li data-index="1">Data Science Intern</li>
+                            </ul>
                         </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="project-card">
-                            <img class="project-card-image" src="images/Designer.jpeg"></img>
-                            <div class="project-card-content">
-                                <div class="project-card-title">
-                                    <h4>Farmer's Dashboard</h4>
-                                </div>
-                                <div class="project-card-info">
-                                    <p>This is the additional information that appears below the title. Both the title and this information will slide up together when you hover over the card.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
+                        <div class="col-md-9" style="padding-top: 1.5rem;">
+                            <div id="job-details">
+                                    
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="project-card">
-                            <img class="project-card-image" src="images/Designer.jpeg"></img>
-                            <div class="project-card-content">
-                                <div class="project-card-title">
-                                    <h4>University Course Enrollment App</h4>
-                                </div>
-                                <div class="project-card-info">
-                                    <p>This is the additional information that appears below the title. Both the title and this information will slide up together when you hover over the card.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
+                            <div class= "job-description" id="job-description" style="max-height: 300px;overflow-y: scroll;">
+        
                             </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- <div class="row" style="padding-top: 20px;">
-                    <div class="col-md-4">
-                        <div class="card-properties">
-                            <div class="card-image">
                                 
-                            </div>
-                            <div class="card-info">
-                                <h3>Caption generation for Images</h3>
-                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4"> 
-                        <div class="card">
-                            <div>
-                                <h4>Project-2(Full Stack Web Development)</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div>
-                                <h4>Caption Generation For Images</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div>
-                                <h4>Caption Generation For Images</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                </div> -->
-                <!-- <div class="row">
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="col-md-4" style="display: flex;">
-
-                            </div>
-                            <div class="col-md-8">
-                                <h4>Project-3(Machine Learning)</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6"> 
-                        <div class="card">
-                            <div class="col-md-4" style="display: flex;">
-
-                            </div>
-                            <div class="col-md-8">
-                                <h4>Project-4</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-            </section>
-    
-    
-            <section id="contact" style="margin-bottom: 30px;">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="row">
-                                <span style="align-items: center;"><h3>Lets connect!</h3></span>
-                                <p>Feel free to reach out to me for any collaboration or work !</p>
-                                <div class="container-fluid">
-                                    <div class="connect">
-                                        <a href="mailto:panchavati.jahnavi@gmail.com" style="text-decoration: none;">
-                                            <img width="64" height="64" src="https://img.icons8.com/sf-black-filled/64/new-post.png" alt="email"/>
-                                        </a>
-                                        <a href="mailto:panchavati.jahnavi@gmail.com" style="text-decoration: none;">panchavati.jahnavi@gmail.com</a>
+                </div>
+                <div id="projects" class=" container projects">
+                    <h2 style="text-align: center;">Projects</h2>
+                    <div class="row" style="margin-top: 30px; max-height: 45vh;">
+                        <div class="col-md-3">
+                            <div class="project-card">
+                                <img class="project-card-image" src="images/Designer.jpeg"></img>
+                                <div class="project-card-content">
+                                    <div class="project-card-title">
+                                        <h5>Caption Generation For Images</h5>
                                     </div>
-                                    <div class="connect">
-                                        <a href="https://www.linkedin.com/in/panchavati-jahnavi/" target="_blank" style="text-decoration: none;">
-                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" height="50" width="50"/>
-                                        </a>
-                                        <a href="https://www.linkedin.com/in/panchavati-jahnavi/" target="_blank" style="text-decoration: none;">linkedin.com/in/panchavati-jahnavi/</a>
+                                    <div class="project-card-info">
+                                        <p>This is the additional information that appears below the title. Both the title and this information will slide up together when you hover over the card.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
                                     </div>
-                                    <div class="connect">
-                                        <a href="https://github.com/Jahnavi1899" target="_blank" style="text-decoration: none;">
-                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" height="50px" width="50px"/> 
-                                        </a>
-                                        <a href="https://github.com/Jahnavi1899" target="_blank" style="text-decoration: none;">github.com/Jahnavi1899</a>
-                                    </div>
-                                    <!-- <span>Connect with me on:</span> -->
                                 </div>
-                               
-                                <!-- <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label for="formName" class="form-label">Name</label>
-                                        <input type="text" class="form-control" id="formName" placeholder="Enter your name..." required>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="project-card">
+                                <img class="project-card-image" src="images/rag_app.png"></img>
+                                <div class="project-card-content">
+                                    <div class="project-card-title">
+                                        <h5>Document Summarizer and Q&A App</h5>
                                     </div>
-                                    <div class="mb-3">
-                                        <label for="formEmail" class="form-label">Email</label>
-                                        <input type="text" class="form-control" id="formEmail" placeholder="Enter your email address..." required>
+                                    <div class="project-card-info">
+                                        <p>This is the additional information that appears below the title. Both the title and this information will slide up together when you hover over the card.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
                                     </div>
-                                   
-                                    <div class="mb-3">
-                                        <label for="formText" class="form-label">Message</label>
-                                        <textarea class="form-control" id="formText" rows="3" placeholder="Type your message here..."></textarea>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Send</button>
-                                    
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <span>Email me at:</span>
-                                        <a href="mailto:panchavati.jahnavi@gmail.com">panchavati.jahnavi@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="project-card">
+                                <img class="project-card-image" src="images/dashboard.jpeg"></img>
+                                <div class="project-card-content">
+                                    <div class="project-card-title">
+                                        <h5>Farmer's Dashboard</h5>
                                     </div>
-                                    <div class="mb-3">
-                                        <span>Connect with me on:</span>
-                                        <a href="https://www.linkedin.com/in/panchavati-jahnavi/" target="_blank">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-                                            </svg>
-                                        </a>
+                                    <div class="project-card-info">
+                                        <p>This is the additional information that appears below the title. Both the title and this information will slide up together when you hover over the card.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
                                     </div>
-                                    <div class="mb-3">
-                                        <span>View my work on:</span>
-                                        <a href="https://github.com/Jahnavi1899" target="_blank">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-                                            </svg>
-                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="project-card">
+                                <img class="project-card-image" src="images/universityenrolment.png"></img>
+                                <div class="project-card-content">
+                                    <div class="project-card-title">
+                                        <h5>University Course Enrollment App</h5>
                                     </div>
-                                    
-                                </div> -->
+                                    <div class="project-card-info">
+                                        <p>This is the additional information that appears below the title. Both the title and this information will slide up together when you hover over the card.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <footer>
+                <div id="contact" class="container" style="display: flex; justify-content: center;align-items: center;">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <span style="align-items: center;"><h3>Lets connect!</h3></span>
+                            <p>Feel free to reach out to me on the following platforms !</p>
+                            <div >
+                                <div class="connect">
+                                    <a href="mailto:panchavati.jahnavi@gmail.com" style="text-decoration: none;">
+                                        <img width="64" height="64" src="https://img.icons8.com/sf-black-filled/64/new-post.png" alt="email"/>
+                                    </a>
+                                    <a href="mailto:panchavati.jahnavi@gmail.com" style="text-decoration: none;">panchavati.jahnavi@gmail.com</a>
+                                </div>
+                                <div class="connect">
+                                    <a href="https://www.linkedin.com/in/panchavati-jahnavi/" target="_blank" style="text-decoration: none;">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" height="50" width="50"/>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/panchavati-jahnavi/" target="_blank" style="text-decoration: none;">linkedin.com/in/panchavati-jahnavi/</a>
+                                </div>
+                                <div class="connect">
+                                    <a href="https://github.com/Jahnavi1899" target="_blank" style="text-decoration: none;">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" height="50px" width="50px"/> 
+                                    </a>
+                                    <a href="https://github.com/Jahnavi1899" target="_blank" style="text-decoration: none;">github.com/Jahnavi1899</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+      
+        <footer>
                 <!-- <p style="text-align: center;">Developed by Jahnavi Panchavati @ 2024 </p> -->
-            </footer>
+        </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" \
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-
         <script src="script.js"></script>
     </body>
 </html>

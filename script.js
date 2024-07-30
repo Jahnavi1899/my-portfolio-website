@@ -1,3 +1,12 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const container = document.querySelector('.header-bar');
+  
+    menuToggle.addEventListener('click', function () {
+      container.classList.toggle('expanded');
+    });
+  });
+  
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-link');
     console.log(navLinks)
@@ -17,16 +26,18 @@ document.getElementById("resume-button").addEventListener("click", function() {
     window.open(resumeUrl, "_blank");
 });
 
-window.addEventListener('scroll', function() {
-    const header = document.getElementById('header');
-    if (window.scrollY > 50) {
-        header.classList.remove('transparent');
-        header.classList.add('solid');
-    } else {
-        header.classList.remove('solid');
-        header.classList.add('transparent');
-    }
-});
+// window.addEventListener('scroll', function() {
+//     const header = document.querySelector('header');
+//     if (window.scrollY > 50) {
+//         header.style.opacity = 0.8;
+//         // header.classList.remove('transparent');
+//         // header.classList.add('solid');
+//     } else {
+//         header.style.opacity = 1;
+//         // header.classList.remove('solid');
+//         // header.classList.add('transparent');
+//     }
+// });
 
 document.addEventListener('DOMContentLoaded', function(){
     const jobList = document.getElementById('job-list');
