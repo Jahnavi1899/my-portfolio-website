@@ -13,69 +13,61 @@
         <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
           
     </head>
-    <body style="background-color: antiquewhite; display: flex; flex-direction: column; flex-grow: 1;">
+    <body style="background-color: #bee9e8; display: flex; flex-direction: column; flex-grow: 1;">
         <header>
             <div class="header-bar">
                 <button class="menu-toggle" aria-label="Toggle navigation">
-                    &#9776; <!-- This is the hamburger icon -->
+                    &#9776; 
                   </button>
                 <nav class="nav-dropdown">
                   <ul class="nav-links" style="margin-bottom: 0; padding-left: 0;">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Experience</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                   </ul>
                 </nav>
              </div>
-          
-            <!-- <div class="header-bar">
-                <nav>
-                    <ul class="nav-links" >
-                        
-                      </ul>
-                </nav>
-            </div> -->
         </header>
         <div style="display: flex; flex-direction: column; flex-grow: 1; height: 100%; margin-top: var(--e);">
             <main>
                 <div id="home" class="container-fluid home-container">
                     <div class="home-child">
-                        <h2>Hello!</h2>
-                        <h1 style="font-size: 55px;">I'm Jahnavi</h1>
-                        <h2>Software Developer</h2>
-                        <p style="font-size: 20px;">Master of Computer Science, North Carolina State University</p>
-                        <div style="text-align: center;">
-                            <button id="resume-button" style="border-radius: 10px; background-color: #023e8a; color: aliceblue;">Resume</button>
+                        <h2 style="color: aliceblue;">Hello!</h2>
+                        <h1 style="font-size: 55px; color: #ff928b;">I'm Jahnavi</h1>
+                        <h2 style="color: aliceblue">Software Developer</h2>
+                        <p style="font-size: 20px;color: aliceblue;">Master of Computer Science, North Carolina State University</p>
+                        <div style="text-align: center; cursor: pointer;">
+                            <button id="resume-button" style="border:4px solid #ff928b; color:#ff928b; background-color: #1b4965; ">Resume</button>
                         </div>
                     </div>
                     
                 </div>
                 <div id="about-me" class="container about-me">
-                    <div style="text-align: center;">
+                    <!-- <div style="text-align: center;">
                         <h2>About Me</h2>
-                    </div>
+                    </div> -->
                     <div class="row">
-                        <div style="text-align: center;">
+                        <div style="text-align: center; color: #1b4965;">
                             <p>
-                                Hello World! Welcome to my webpage. I am Jahnavi and I am currently pursuing my masters in computer science
-                                at North Carolina State University, United States. Technology always fascinated me and getting to know the working of the awesome technology we use everyday
-                                has been my goal.  I completed my Bachelor of Technology in Electronics and
-                                Communication from PES University, Bangalore, India. My interests lie in the area of software, data and cloud. My interets and curiosity in learning the how part of the amazing technology benefits
-                                we experience today has made me choose the field of computer science. Go ahead and look at the projects I worked on! I am actively looking 
-                                for full time opportunities starting May 2025. 
-                                <!-- Please reach out to me for any opportunities or collaborations. -->
+                                <h4>Hello World! Welcome to my corner of the internet.</h4> I'm Jahnavi, a passionate explorer on a journey through the captivating realm of technology. 
+                                Currently, I'm diving deep into the wonders of computer science as a master's student at North Carolina State University, United States.
+                                My journey into the world of tech began with a Bachelor's degree in Electronics and Communication from PES University, India, and it has been an exhilarating ride ever since.
+                                The magic of technology has always captivated me. Understanding how the brilliant innovations we use every day come to life is my driving force. My interests span across software development, artificial intelligence, and cloud computing—fields where I believe the future is being crafted.
+                                Dive into my projects to see the exciting work I've been involved in. From creating dynamic web applications to pioneering AI-driven solutions, my portfolio is a testament to my dedication and curiosity.
+                                As I prepare to embark on the next chapter of my career, I'm actively seeking full-time opportunities starting May 2025. Let's connect and explore the endless possibilities together!
                             </p>
     
                         </div>
                     </div>
                     <div class="container-fluid">
+                        <h3>Technical Skills</h3>
                         <div class="row">    
-                            <div class="col-md-6">
-                                <div class="card">
-                                    <div class="card-header"> 
-                                        <h3>Programming Languages and Frameworks</h3>
+                            <div class="col-md-12">
+                                <div style="margin: 10px 0px;">
+                                    <div style="margin-bottom: 10px;"> 
+                                        <h4>Programming Languages and Frameworks</h4>
                                     </div>
                                     <div class="card-body">
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" height="80px" width="80px" style="padding-right: 10px;"/>
@@ -96,11 +88,9 @@
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-plain-wordmark.svg" height="80px" width="80px" style="padding-right: 10px;"/>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3>Databases and Technologies</h3>
+                                <div style="margin: 10px 0px;">
+                                    <div style="margin-bottom: 10px;">
+                                        <h4>Databases and Technologies</h4>
                                     </div>
                                     <div class="card-body">
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" height="80px" width="80px" style="padding-right: 10px;"/>
@@ -113,9 +103,13 @@
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" height="80px" width="80px" style="padding-right: 10px;"/>
                                     </div>
                                 </div>
+
                             </div>
+                            <!-- <div class="col-md-6">
+                            </div> -->
                         </div>
                     </div>
+
                 </div>
                 <div id="experience" class="container experience" >
                     <div style="text-align: center;margin-bottom: 1.5rem;">
@@ -128,21 +122,22 @@
                                 <li data-index="1">Data Science Intern</li>
                             </ul>
                         </div>
-                        <div class="col-md-9" style="padding-top: 1.5rem;">
-                            <div id="job-details">
+                        <div class="col-md-9" style="margin-top: 1.5rem; background-color: #1b4965;"> <!--background-image: linear-gradient(180deg, #014f86, transparent);-->
+                            <div id="job-details" style="padding-top: 1rem;">
                                     
                             </div>
-                            <div class= "job-description" id="job-description" style="max-height: 300px;overflow-y: scroll;">
+                            <div class= "job-description" id="job-description" style="max-height: 300px;color: aliceblue;"> <!--overflow-y: scroll;-->
         
                             </div>
                                 
                         </div>
                     </div>
+                    
                 </div>
                 <div id="projects" class=" container projects">
                     <h2 style="text-align: center;">Projects</h2>
-                    <div class="row" style="margin-top: 30px; max-height: 45vh;">
-                        <div class="col-md-3">
+                    <div class="row" style="margin-top: 30px;">
+                        <div class="col-md-4">
                             <div class="project-card">
                                 <img class="project-card-image" src="images/Designer.jpeg"></img>
                                 <div class="project-card-content">
@@ -150,13 +145,16 @@
                                         <h5>Caption Generation For Images</h5>
                                     </div>
                                     <div class="project-card-info">
-                                        <p>This is the additional information that appears below the title. Both the title and this information will slide up together when you hover over the card.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <p>
+                                            Implemented a CNN-RNN deep neural network using VGG16 and LSTM for image caption generation. 
+                                            Enhanced performance by incorporating attention mechanisms, resulting in more accurate and context-aware captions.
+                                        </p>
+                                        <a href="https://github.com/Jahnavi1899/Caption-Generation-for-Images" class="btn btn-primary">View on GitHub</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="project-card">
                                 <img class="project-card-image" src="images/rag_app.png"></img>
                                 <div class="project-card-content">
@@ -164,13 +162,18 @@
                                         <h5>Document Summarizer and Q&A App</h5>
                                     </div>
                                     <div class="project-card-info">
-                                        <p>This is the additional information that appears below the title. Both the title and this information will slide up together when you hover over the card.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <p>
+                                            Developed a dynamic web application utilizing ReactJS for the frontend and FastAPI for the backend. 
+                                            This application enables users to upload documents and receive automated summaries. Additionally, users can 
+                                            interact with the summarized content by asking questions, with the AI-driven responses powered by Langchain and 
+                                            Hugging Face.
+                                        </p>
+                                        <a href="https://github.com/Jahnavi1899/Document-Summarizer" class="btn btn-primary">View on GitHub</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="project-card">
                                 <img class="project-card-image" src="images/dashboard.jpeg"></img>
                                 <div class="project-card-content">
@@ -178,13 +181,16 @@
                                         <h5>Farmer's Dashboard</h5>
                                     </div>
                                     <div class="project-card-info">
-                                        <p>This is the additional information that appears below the title. Both the title and this information will slide up together when you hover over the card.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <p>
+                                            Developed a web application that recommends crops based on farming-related queries. 
+                                            Integrated the OpenAI API to enable a chatbot that responds to user inquiries about crop life cycles.
+                                        </p>
+                                        <a href="#" class="btn btn-primary">View on GitHub</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <!-- <div class="col-md-3">
                             <div class="project-card">
                                 <img class="project-card-image" src="images/universityenrolment.png"></img>
                                 <div class="project-card-content">
@@ -192,12 +198,12 @@
                                         <h5>University Course Enrollment App</h5>
                                     </div>
                                     <div class="project-card-info">
-                                        <p>This is the additional information that appears below the title. Both the title and this information will slide up together when you hover over the card.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <p></p>
+                                        <a href="#" class="btn btn-primary">View on GitHub</a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div id="contact" class="container" style="display: flex; justify-content: center;align-items: center;">
@@ -205,7 +211,7 @@
                         <div class="row">
                             <span style="align-items: center;"><h3>Lets connect!</h3></span>
                             <p>Feel free to reach out to me on the following platforms !</p>
-                            <div >
+                            <div style="display: flex;justify-content: center;align-items: center;">
                                 <div class="connect">
                                     <a href="mailto:panchavati.jahnavi@gmail.com" style="text-decoration: none;">
                                         <img width="64" height="64" src="https://img.icons8.com/sf-black-filled/64/new-post.png" alt="email"/>

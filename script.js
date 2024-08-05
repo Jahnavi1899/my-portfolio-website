@@ -69,17 +69,31 @@ document.addEventListener('DOMContentLoaded', function(){
 
     jobList.addEventListener('click', function(event){
         const selectedJobIndex = event.target.getAttribute('data-index');
-
+        console.log(selectedJobIndex)
         if(selectedJobIndex !== null){
             const selectedJob = items[selectedJobIndex]
             renderSelectedJobDetails(selectedJob)
         }
     })
 
+    // JavaScript to add event listener to each li element
+    document.addEventListener("DOMContentLoaded", function() {
+        // Get all li elements
+        var listItems = document.querySelectorAll("#job-list li");
+
+        // Add click event listener to each li element
+        listItems.forEach(function(item) {
+            item.addEventListener("click", function() {
+                // Toggle the highlight class on click
+                this.classList.toggle("highlight");
+            });
+        });
+    });
+
     function renderSelectedJobDetails(item){
         jobDetails.innerHTML=`
-            <h5>${item.title}</h5>
-            <h6>${item.company}, ${item.location}</h6>
+            <h5 style="color:#ff928b">${item.title}</h5>
+            <h6 style="color:#ff928b">${item.company}, ${item.location}</h6>
         `
         let sentencesContainer = document.getElementById('job-description');
         sentencesContainer.innerHTML = "";
